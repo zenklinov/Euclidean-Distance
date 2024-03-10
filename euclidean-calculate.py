@@ -28,7 +28,7 @@ def save_progress(i, j_iter, distances, save_directory="/content/drive/My Drive/
     if not os.path.exists(save_directory):
         os.makedirs(save_directory)
 
-    save_path = os.path.join(save_directory, "euclidean_distance.pkl")
+    save_path = os.path.join(save_directory, "euclidean_distances.pkl")
 
     # Save progress along with i, j, and distances
     progress = (i * n_rows + j_iter) / (n_rows * n_rows) * 100
@@ -53,7 +53,7 @@ def load_progress_safe(load_path, n_rows):
 
 # Define the load_progress function
 def load_progress():
-    load_path = "/content/drive/My Drive/euclidean_distance.pkl"
+    load_path = "/content/drive/My Drive/euclidean_distances.pkl"
     return load_progress_safe(load_path, n_rows)
 
 # Load the last progress or start from the beginning if no previous progress exists
