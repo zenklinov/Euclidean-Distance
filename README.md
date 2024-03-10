@@ -1,1 +1,1 @@
-# Euclidean-Distance
+# Distance Metrics
