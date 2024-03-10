@@ -1,0 +1,10 @@
+import pandas as pd
+
+# File path relative to the mounted Google Drive
+file_path = '/content/drive/My Drive/dtw_distances.csv'
+
+# Read the DTW CSV file using pandas
+dtw_distances = pd.read_csv(file_path, header=None)  # Add the header=None parameter to ignore the header
+
+# Display the dataframe
+print(dtw_distances)
