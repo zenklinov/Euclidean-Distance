@@ -1,10 +1,16 @@
-pip install fastdtw 
+pip install tensorflow-gpu==2.12.0 #Skip if already installed
+
+import tensorflow as tf
+tf.config.list_physical_devices('GPU')
+
+pip install fastdtw #Skip if already installed
+
+from fastdtw import fastdtw 
 
 import os
 import pickle
 import numpy as np
 import random
-import tensorflow as tf
 
 # Assume dataku is defined before this code
 
@@ -22,13 +28,13 @@ dtw_distances = np.zeros((n_rows, n_rows))
 
 # Function to save progress
 def save_progress(i, j_iter, dtw_distances):
-    save_directory = "F:/DATA0.05x0.05"
+    save_directory = "/content/drive/My Drive/"
 
     # Create directory if not exists
     if not os.path.exists(save_directory):
         os.makedirs(save_directory)
 
-    save_path = os.path.join(save_directory, "progress_dtw.pkl")
+    save_path = os.path.join(save_directory, "dtw_distances.pkl")
 
     # Save progress along with i, j, and dtw_distances
     progress = (i * n_rows + j_iter) / (n_rows * n_rows) * 100
@@ -53,7 +59,7 @@ def load_progress_safe(load_path, n_rows):
 
 # Define the load_progress function
 def load_progress():
-    load_path = "F:/DATA0.05x0.05/progress_dtw.pkl"
+    load_path = "/content/drive/My Drive/dtw_distances.pkl"
     return load_progress_safe(load_path, n_rows)
 
 # Load the last progress or start from the beginning if no previous progress exists
