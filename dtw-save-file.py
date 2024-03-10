@@ -11,12 +11,12 @@ try:
         # Generate meaningful column names
         column_names = [f'Distance_{i+1}' for i in range(len(data[3]))]
 
-        # Menyimpan data dalam DataFrame
+        # Save data into DataFrame
         df = pd.DataFrame(data[3], columns=column_names)
 
-        # Menyimpan DataFrame ke file CSV
+        # Save DataFrame to CSV file
         df.to_csv(save_csv_path, index=False)
 
-    print(f"Data berhasil disimpan dalam {save_csv_path}")
+    print(f"Data successfully saved to {save_csv_path}")
 except (FileNotFoundError, EOFError) as e:
     print(f"Error: {e}")
