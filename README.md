@@ -4,19 +4,23 @@ This repository contains Python scripts to calculate various distance metrics be
 
 ## File List
 
-1. **Import-Data-Drive.py**: This script is used to import data from Google Drive to Google Colab using Google Colab.
+`Import-Data-Drive.py`: This script is used to import data from Google Drive to Google Colab using Google Colab.
 
-2. **dtw-calculate.py**: This script calculates the Dynamic Time Warping (DTW) Distance between each pair of data rows in the dataset using TensorFlow.
+### Euclidean Distance
 
-3. **dtw-save-file.py**: This script saves the DTW distance matrix to a CSV file.
+1. `euclidean-calculate.py`: This script calculates the Euclidean distance between each pair of data rows in the dataset using TensorFlow.
 
-4. **dtw-view-result.py**: This script loads and displays the calculated DTW distance results that have been saved in CSV format.
+2. `euclidean-save-file.py`: This script saves the Euclidean distance matrix to a CSV file.
 
-5. **euclidean-calculate.py**: This script calculates the Euclidean distance between each pair of data rows in the dataset using TensorFlow.
+3. `euclidean-view-result.py`: This script loads and displays the calculated Euclidean distance results that have been saved in CSV format.
 
-6. **euclidean-save-file.py**: This script saves the Euclidean distance matrix to a CSV file.
+### Dynamic Time Warping (DTW) Distance
 
-7. **euclidean-view-result.py**: This script loads and displays the calculated Euclidean distance results that have been saved in CSV format.
+1. `dtw-calculate.py`: This script calculates the Dynamic Time Warping (DTW) Distance between each pair of data rows in the dataset using TensorFlow.
+
+2. `dtw-save-file.py`: This script saves the DTW distance matrix to a CSV file.
+
+3. `dtw-view-result.py`: This script loads and displays the calculated DTW distance results that have been saved in CSV format.
 
 ## How to Use
 
