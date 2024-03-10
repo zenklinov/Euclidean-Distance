@@ -1,8 +1,8 @@
 import pickle
 import pandas as pd
 
-load_path = "/content/drive/My Drive/euclidean_distance.pkl"
-save_csv_path = "/content/drive/My Drive/euclid_distances.csv"
+load_path = "/content/drive/My Drive/euclidean_distances.pkl"
+save_csv_path = "/content/drive/My Drive/euclidean_distances.csv"
 
 try:
     with open(load_path, "rb") as file:
