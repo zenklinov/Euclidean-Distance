@@ -1,4 +1,4 @@
-# Metrics-Distance-TensorFlow
+# Metrics Distance TensorFlow
 
 This repository contains Python scripts to calculate various distance metrics between rows of data in a dataset using TensorFlow. The implemented distance metrics include Dynamic Time Warping (DTW) Distance and Euclidean Distance.
 
